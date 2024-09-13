@@ -22,8 +22,8 @@ namespace TestRESTAPI.Data.Models
         [ForeignKey(nameof(category))]
         public int CategoryId { get; set; }
 
-        [JsonIgnore]
-        [IgnoreDataMember]
+        //[JsonIgnore]
+        //[IgnoreDataMember]
         public virtual Category category { get; set; }
 
         public bool isActive { get; set; }

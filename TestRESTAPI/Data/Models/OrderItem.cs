@@ -20,8 +20,8 @@ namespace TestRESTAPI.Data.Models
         [ForeignKey(nameof(items))]
         public int ItemId { get; set; }
 
-        [JsonIgnore]
-        [IgnoreDataMember]
+        //[JsonIgnore]
+        //[IgnoreDataMember]
         public virtual Item? items { get; set; } 
 
         [Required]

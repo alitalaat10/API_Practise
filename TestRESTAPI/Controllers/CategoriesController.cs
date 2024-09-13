@@ -24,7 +24,7 @@ namespace TestRESTAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            var cats = await _db.Categories.ToListAsync();
+            var cats = await _db.Categories.Include("Items").ToListAsync();
             return Ok(cats);
         }
 

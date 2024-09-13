@@ -24,7 +24,8 @@ namespace TestRESTAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> AllItems()
         {
-            List<Item> items = await _db.Items.Include("category").ToListAsync();
+            List<Item> items = await _db.Items.ToListAsync();
+
             return Ok(items);
         }
 

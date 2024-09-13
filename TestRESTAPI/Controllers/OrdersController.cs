@@ -11,7 +11,7 @@ namespace TestRESTAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize]
+    [Authorize]
     public class OrdersController : ControllerBase
     {
         public OrdersController(AppDbContext db)

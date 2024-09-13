@@ -40,8 +40,8 @@ namespace TestRESTAPI.Extentions
                     Description = "adasdsad",
                     Contact = new OpenApiContact()
                     {
-                        Name = "al Mohamady",
-                        Email = "ahmed@gmail.com",
+                        Name = "tal3at",
+                        Email = "alitalaat142@gmail.com",
                         Url = new Uri("https://mydomain.com")
                     }
                 });
